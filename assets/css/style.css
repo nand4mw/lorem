@@ -112,7 +112,7 @@ a {
   margin-right: auto;
   margin-left: 220px;
   font-weight: bold;
-  color: var(--color-white);
+  color: var(--color-orng);
 }
 
 
@@ -764,7 +764,7 @@ h1 {
   }
 
   .bar {
-    background-color: var(--color-orng);
+    background-color: var(--color-white);
   }
 
   .hamburger {
