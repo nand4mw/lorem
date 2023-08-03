@@ -653,6 +653,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 12px;
     /* padding: 0 20px; */
     color: var(--color-orng);
   }
