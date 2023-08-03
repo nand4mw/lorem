@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 
 :root {
-  --color-blck: #000;
+  --color-blck: #111118;
   --color-white: #eaeaea;
   --color-blue: #0d1117;
   --color-orng: rgb(243, 119, 48);
@@ -570,6 +570,7 @@ h1 {
   .img1 {
     height: 130px;
     width: 130px;
+    display: none;
 
   }
 
@@ -577,18 +578,12 @@ h1 {
     cursor: pointer;
     width: 130px;
     padding: 0;
-    transition: all .3s ease-in-out;
 
-  }
-
-  .img1 img:hover {
-    opacity: 50%;
-    transform: scale(1.1);
   }
 
   .box-about {
     height: 230px;
-    width: 150px;
+    width: 280px;
     /* background-color: yellow; */
     padding: 0px;
     padding-left: 10px;
