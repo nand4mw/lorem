@@ -556,11 +556,8 @@ h1 {
 
 
   .container-about {
-    height: 40vh;
+    height: 25vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     color: var(--color-white);
     /* background-color: red; */
@@ -582,22 +579,28 @@ h1 {
   }
 
   .box-about {
-    height: 230px;
-    width: 280px;
+    height: 150px;
+    width: 85%;
     /* background-color: yellow; */
     padding: 0px;
-    padding-left: 10px;
-    padding-top: 10px;
+    /* padding-left: 10px; */
+    /* padding-top: 10px; */
 
+  }
+  .box-about .title-page{
+    /* margin-top: -10px; */
   }
 
   .title-page {
     font-size: 2rem;
     color: var(--color-orng);
+    margin-bottom: 3px;
   }
 
   .box-about p {
     width: auto;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1rem;
     text-align: center;
 
