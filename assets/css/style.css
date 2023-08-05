@@ -600,6 +600,7 @@ h1 {
   align-items: center;
   justify-content: center;
   /* background-color: red; */
+  color: var(--color-white)
 }
 
 @use postcss-nested;
@@ -687,19 +688,57 @@ figcaption {
   }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  block-size: 100%;
-  color-scheme: dark light;
-}
-
-
 /* hhhhhhhhhhhhhhhh */
 
+
+
+.container-exp {
+  width: 80%;
+  height: 100vh;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 80px;
+}
+
+.card-edu {
+  margin-top: 100px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-edu {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  height: 150px;
+  width: 500px;
+  /* background-color: yellow; */
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+
+.list-edu span {
+  color: var(--color-orng);
+}
+
+.list-edu h2 {
+  font-size: 3rem;
+}
+
+.list-edu h3 {
+  font-size: 2rem;
+}
+
+.list-edu p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+
+}
 
 
 @media only screen and (max-width: 425px) {
@@ -995,3 +1034,5 @@ html {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+
