@@ -31,14 +31,23 @@ a {
   text-decoration: none;
 }
 
-.header {}
+.header {
+  position: fixed;
+
+  z-index: 999;
+  /* background-color: var(--color-blck); */
+}
 
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  /* background-color: var(--color-darkblue); */
+  z-index: 999;
+  background-color: var(--color-blck);
+
 }
 
 .hamburger {
@@ -58,9 +67,18 @@ a {
 
 .nav-menu {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
-  margin-right: 230px;
+  margin-right: 213px;
+}
+
+.nav-logo {
+  font-size: 3rem;
+  margin-right: auto;
+  margin-left: 213px;
+  font-weight: bold;
+  color: var(--color-orng);
 }
 
 .nav-item {
@@ -107,14 +125,6 @@ a {
   transition-property: width, left;
 }
 
-.nav-logo {
-  font-size: 3rem;
-  margin-right: auto;
-  margin-left: 220px;
-  font-weight: bold;
-  color: var(--color-orng);
-}
-
 
 
 /* header section */
@@ -130,7 +140,7 @@ a {
 .hero-container {
   position: relative;
   width: 1200px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -150,6 +160,7 @@ a {
 .title-container h1 {
   font-size: 7rem;
   color: var(--color-white);
+  margin-left: -3px;
 }
 
 .iam span {
@@ -166,7 +177,7 @@ a {
 
 .title-container p {
   width: 300px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: var(--color-white);
 
 }
@@ -414,6 +425,7 @@ a {
   flex-direction: column;
   padding: 0 20px;
   color: var(--color-orng);
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -489,6 +501,204 @@ h1 {
   transform: translateX(50%) rotate(45deg);
 }
 
+
+
+/* hhhhhhhhhhhhhhhh */
+.portex {
+  width: 80%;
+  height: 420px;
+  /* background-color: green; */
+  padding: 15px;
+  padding-top: 0;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.text-line {
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  /* background-color: black; */
+}
+
+.text-line p {
+  font-size: 2rem;
+}
+
+.text-line a {
+  display: flex;
+  margin-left: auto;
+  font-size: 2rem;
+  /* background-color: var(--color-orng); */
+  /* padding: 5px 15px; */
+  /* color: var(--color-white); */
+  border-radius: 5px;
+}
+
+/* button portofolio  */
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
+  --color: #373B44;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color-orng);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #5c4a4a00 90deg, var(--color-orng) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color-orng);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color-orng);
+  color: #fff;
+}
+
+/* button portofolio  */
+.prtsc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+
+
+.porto {
+  padding: 20px;
+  width: 60%;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+@use postcss-nested;
+
+.adaptive-glass {
+  --glass-lightness: 100%;
+  background: hsl(0 0% var(--glass-lightness) / 50%);
+  backdrop-filter: blur(40px);
+
+  @media (prefers-color-scheme: dark) {
+    --glass-lightness: 0%;
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    background: hsl(0 0% var(--glass-lightness) / 90%);
+  }
+}
+
+figure {
+  border-radius: 8px;
+  --on-glass-primary: hsl(220 50% 20%);
+  --on-glass-secondary: hsl(220 40% 30%);
+
+  border-radius: .5ch;
+  overflow: hidden;
+
+  /*  https://shadows.brumm.af/  */
+  box-shadow:
+    0 3px 2px hsl(0 0% 0% / 2%),
+    0 7px 5px hsl(0 0% 0% / 3%),
+    0 13px 10px hsl(0 0% 0% / 4%),
+    0 22px 18px hsl(0 0% 0% / 5%),
+    0 42px 33px hsl(0 0% 0% / 6%),
+    0 100px 80px hsl(0 0% 0% / 7%);
+
+  @media (prefers-color-scheme: dark) {
+    --on-glass-primary: hsl(220 50% 90%);
+    --on-glass-secondary: hsl(220 30% 75%);
+  }
+
+  & img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+  }
+}
+
+figcaption {
+  display: grid;
+  grid: [stack] 1fr / [stack] 1fr;
+  position: relative;
+  border-radius: 8px;
+
+  &>* {
+    grid-area: stack;
+  }
+
+  &>img {
+    position: absolute;
+    inset: 0;
+    /*   reflect hero image for a nice effect!   */
+    transform: scaleY(-1);
+  }
+
+  &>section {
+    z-index: 1;
+    padding-inline: 2ch;
+    padding-block: 2ch 2.5ch;
+    color: var(--on-glass-primary);
+    display: grid;
+    gap: 1ch;
+
+    @media (prefers-color-scheme: dark) {
+      text-shadow: 0 1px 0 hsl(0 0% 0% / 20%);
+    }
+  }
+
+  & h3 {
+    font-size: clamp(1.25rem, calc(1rem + 2vw), 2.5rem);
+  }
+
+  & date {
+    color: var(--on-glass-secondary);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  block-size: 100%;
+  color-scheme: dark light;
+}
+
+
+/* hhhhhhhhhhhhhhhh */
 
 
 
@@ -607,19 +817,19 @@ h1 {
     text-align: center;
   }
 
+  .prtsc {
+    height: 50vh;
+    /* background-color: red; */
+  }
 
+  .porto {
+    width: 90%;
 
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .portex {
+    display: none;
+  }
 
   .container-skills {
     margin: 0;
