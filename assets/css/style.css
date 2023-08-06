@@ -153,8 +153,9 @@ a {
 .title-container {
   width: 560px;
   height: 500px;
-  padding: 20px;
+  padding-left: 20px;
   display: flex;
+  /* background-color: yellow; */
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -162,14 +163,16 @@ a {
 
 .title-container h1 {
   font-size: 7rem;
+  display: flex;
   color: var(--color-white);
+  /* background-color: red; */
   margin-left: -3px;
 }
 
 .iam span {
   font-size: 7rem;
   /* background-color: var(--color-blck); */
-  /* padding: 5px 30px; */
+  padding-left: 8px;
   color: var(--color-orng);
 }
 
@@ -591,6 +594,7 @@ h1 {
   flex-direction: column;
   /* background-color: red; */
   height: 100vh;
+  /* border-radius: 10px; */
 }
 
 
@@ -603,12 +607,15 @@ h1 {
   align-items: center;
   justify-content: center;
   /* background-color: red; */
-  color: var(--color-white)
+  color: var(--color-white);
+  /* border-radius: 10px */
 }
 
 @use postcss-nested;
 
 .adaptive-glass {
+  /* border-radius: 8px; */
+
   --glass-lightness: 100%;
   background: hsl(0 0% var(--glass-lightness) / 50%);
   backdrop-filter: blur(40px);
@@ -623,11 +630,11 @@ h1 {
 }
 
 figure {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   --on-glass-primary: hsl(220 50% 20%);
   --on-glass-secondary: hsl(220 40% 30%);
 
-  border-radius: .5ch;
+  border-radius: 5px;
   overflow: hidden;
 
   /*  https://shadows.brumm.af/  */
@@ -656,10 +663,11 @@ figcaption {
   display: grid;
   grid: [stack] 1fr / [stack] 1fr;
   position: relative;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 
   &>* {
     grid-area: stack;
+    /* border-radius: 8px; */
   }
 
   &>img {
@@ -667,6 +675,7 @@ figcaption {
     inset: 0;
     /*   reflect hero image for a nice effect!   */
     transform: scaleY(-1);
+    /* border-radius: 8px;     */
   }
 
   &>section {
@@ -1231,6 +1240,25 @@ button:hover {
   }
 
 
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+  }
+
+  .link-port0 {
+    color: var(--color-orng);
+    font-size: 1.2rem;
+    /* background-color: ; */
+    margin-right: 10px;
+    /* text-decoration: underline; */
+
+    border: 1px solid var(--color-orng);
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
 
 }
 
