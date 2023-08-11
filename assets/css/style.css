@@ -597,7 +597,7 @@ h1 {
   /* border-radius: 10px */
 }
 
-@use postcss-nested;
+/* @use postcss-nested; */
 
 .adaptive-glass {
   /* border-radius: 8px; */
@@ -718,6 +718,10 @@ figcaption {
   /* background-color: yellow; */
   color: var(--color-white);
   border-bottom: 1px solid var(--color-white);
+}
+
+.list-edu h1{
+  color: var(--color-orng);
 }
 
 .list-edu span {
@@ -841,7 +845,7 @@ button:hover {
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--color-orng);
   margin: 0 0 10px;
   padding: 0;
   transition: ease 0.25s;
@@ -881,7 +885,7 @@ button:hover {
   background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--color-orng);
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
@@ -891,6 +895,7 @@ button:hover {
 .footer-distributed .footer-right a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
+  color: var(--color-white);
 }
 
 .footer-distributed p.footer-links a:hover {
@@ -1043,7 +1048,6 @@ button:hover {
     width: 88%;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 
   .journ-skills {
