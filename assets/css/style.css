@@ -751,14 +751,14 @@ button:hover {
   }
 
   .title-container h3 {
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-size: 4rem;
     color: var(--color-white);
-    margin-bottom: -15px;
+    margin-bottom: -8px;
   }
 
   .title-container h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--color-orng);
     /* color: var(--color-white); */
   }
@@ -985,7 +985,6 @@ button:hover {
 
 @media only screen and (max-width: 430px) {
   .title-container p {
-   
   }
 
   .title-container {
