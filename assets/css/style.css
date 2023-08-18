@@ -7,6 +7,8 @@
   --color-orng: rgb(243, 119, 48);
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +36,16 @@ li {
 a {
   text-decoration: none;
 }
+
+#preloader {
+  background: #000 url(../img/preloader.gif) no-repeat center center;
+  background-size: 6%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
 
 .header {
   position: fixed;
@@ -716,6 +728,16 @@ button:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 480px) {
+  
+#preloader {
+  background: #000 url(../img/preloader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
   .hero-container {
     width: 100%;
     height: 88vh;
@@ -1076,11 +1098,3 @@ button:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-#preloader {
-  background: #000 url(../img/preloader.gif) no-repeat center center;
-  background-size: 6%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-}
