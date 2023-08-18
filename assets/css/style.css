@@ -709,24 +709,6 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Media Queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   .hero-container {
     /* overflow-y: hidden; */
@@ -864,7 +846,7 @@ button:hover {
     margin: 0;
     padding: 0;
     font-family: "Open-sans", sans-serif;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -935,7 +917,7 @@ button:hover {
   }
 
   .container-exp {
-    height: 100vh;
+    height: 60vh;
     gap: 0px;
   }
 
@@ -945,10 +927,18 @@ button:hover {
 
   .list-edu {
     width: 100%;
+    /* height: 150px; */
   }
-
+  .edu-2 {
+    margin-top: 27px;
+    height: 100px;
+  }
+  .edu-3 {
+    height: 130px;
+  }
   .tittle-edu {
     font-size: 2rem;
+    /* margin-bottom: 2px; */
   }
 
   .list-edu h2 {
@@ -965,6 +955,7 @@ button:hover {
   }
 
   .card-edu {
+    margin-top: 10px;
     gap: 0px;
     width: 100%;
   }
@@ -1015,6 +1006,24 @@ button:hover {
     font-size: 1.2rem;
     color: var(--color-white);
     margin-top: 0;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
   }
 }
 
