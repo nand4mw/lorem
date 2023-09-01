@@ -373,6 +373,7 @@ a {
   font-size: 4rem;
   color: var(--color-white);
   margin-left: 70px;
+  overflow-y: hidden;
 }
 .content-porto a span {
   margin-left: 5px;
