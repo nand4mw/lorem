@@ -519,6 +519,7 @@ h1 {
 
 .list-edu {
   display: flex;
+  overflow-y: hidden;
   align-items: start;
   flex-direction: column;
   height: 150px;
@@ -946,7 +947,7 @@ button:hover {
   }
 
   .container-contact {
-    height: 90vh;
+    height: 110vh;
   }
 
   .list-edu {
@@ -975,6 +976,7 @@ button:hover {
   .list-edu p {
     font-size: 1.2rem;
     margin-top: 15px;
+    overflow-y: hidden;
   }
 
   .card-edu {
