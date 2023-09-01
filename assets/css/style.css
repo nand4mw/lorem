@@ -550,7 +550,8 @@ h1 {
 
 .container-contact {
   width: 80%;
-  height: 60vh;
+  height: 70vh;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
