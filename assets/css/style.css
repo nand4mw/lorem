@@ -967,6 +967,7 @@ button:hover {
 
   .list-edu h2 {
     font-size: 2rem;
+    overflow-y: hidden;
   }
 
   .list-edu h3 {
